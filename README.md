@@ -3,6 +3,47 @@
 
 <img src="https://img.shields.io/badge/PROJECT%20STATUS-ACTIVE%20BETA-FF8800?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/VERSION-0.5.0-4D4D4D?style=for-the-badge&logo=azurepipelines&logoColor=white"> <img src="https://img.shields.io/badge/PYTHON-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white">
 
+
+# ScreenShare Setup Summary
+
+<img src="https://img.shields.io/badge/-Quick%20Setup-0078D6?style=for-the-badge&logo=windows&logoColor=white"> <img src="https://img.shields.io/badge/-3%20Key%20Steps-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+
+- Simplified Step-by-Step:
+
+    Install Python Packages:
+
+        pip install opencv-python numpy pynput pillow
+
+    Install ADB & Scrcpy:
+
+        Download Android Platform Tools
+
+        Download Scrcpy
+
+        Extract and configure paths in the code
+
+- Enable USB Debugging on Phone:
+
+        Go to: Settings > About Phone
+
+        Tap 7 times on Build Number to enable Developer Options
+
+        Return to: Settings > System > Developer Options
+
+        Enable: USB Debugging and Install via USB
+
+        Connect USB cable and authorize computer when prompted
+
+- Verification Commands:
+
+    # Check if device is recognized
+        adb devices
+
+    # Start mirroring
+        python main.py
+
+- Tip: Keep USB debugging enabled and cable connected for stable operation!
+
 ---
 
 # Core Architecture & Screen Mirroring
